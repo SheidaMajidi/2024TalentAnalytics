@@ -1,0 +1,33 @@
+---
+title: "hello-ta"
+author: "Sheida Majidi"
+date: "2024-01-09"
+output:
+  md_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(igraph)
+```
+
+## Hello TA!
+
+## GitHub Documents
+
+## Code
+
+```{r cars}
+dplyr::summarise(cars, speed = mean(speed), dist = mean(dist))
+```
+## Plots
+
+```{r pressure, echo=FALSE}
+ggplot2::ggplot(data = pressure, ggplot2::aes(x = temperature, y = pressure)) +
+  ggplot2::geom_line()
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
